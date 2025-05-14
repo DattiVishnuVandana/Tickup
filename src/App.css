@@ -3,6 +3,9 @@ header{
   margin-right: 10%;
   display:flex;
   justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
 }
 header .logo{
    display:flex;
@@ -67,7 +70,7 @@ header .themeSelector .activeTheme{
   background-color: #FFFFFF;
   max-width: 500px;
   margin: 20px auto;
-
+background-color: white;
 }
 form{
     display: flex;
@@ -86,11 +89,12 @@ button{
 border-radius: 9%;
 background-color: green;
 color:white}
-.showtask{
+.showTask{
    margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
-
+background-color: #fff;
+border-radius: 10px;
 }
 .inside{
    display: flex;
