@@ -1,6 +1,11 @@
 import React from 'react'
 
-export const ShowTask = ({tasklist,setTasklist}) => {
+export const ShowTask = ({tasklist,setTasklist,task,setTask}) => {
+    const handleEdit=(id)=>{
+        const selectedTask=tasklist.find(todo=>todo.id===id)
+        setTask(selectedTask);
+        
+    }
    const handleDelete=(id)=>{
     const updatedTasklist=tasklist.filter(todo=>todo.id!=id);
     setTasklist(updatedTasklist);
@@ -23,7 +28,7 @@ export const ShowTask = ({tasklist,setTasklist}) => {
                 <span className="time">{task.time}</span>
             </p>
             <div className="icons">
-                 <i className="fa-solid fa-pen-to-square i1"></i>
+                 <i className="fa-solid fa-pen-to-square i1" onClick={()=>handleEdit(task.id)}></i>
             <i className="fa-solid fa-trash i2" onClick={()=>handleDelete(task.id)}></i>
             </div>
            
