@@ -1,0 +1,87 @@
+header{
+  margin-left: 10%;
+  margin-right: 10%;
+  display:flex;
+  justify-content: space-between;
+}
+header .logo{
+   display:flex;
+  align-items: center;
+  gap: 15%;
+  font-size: larger;
+  font-weight: bolder;
+}
+img{
+   max-width: 40px;
+  cursor: pointer;
+}
+header .themeSelector span{
+height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+  border: 1px solid #dfdfdf;
+
+}
+.light{
+  background-color: white;
+  transition: all 500ms;
+}
+.dark{
+   background-color:black;
+   transition: all 500ms;
+}
+.medium{
+   background-color:darkcyan;
+   transition: all 500ms;
+}
+.gOne{
+background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+transition: all 500ms;
+}
+.gTwo{
+background: #EEAECA;
+background: linear-gradient(nulldeg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+transition: all 500ms;
+}
+.gThree{
+background: #20002c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+transition: all 500ms;
+}
+header .themeSelector .activeTheme{
+  height: 30px;
+  width: 30px;
+}
+
+.middle{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+ padding: 20px 15px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  max-width: 500px;
+  margin: 20px auto;
+
+}
+form{
+    display: flex;
+  gap: 7px;
+}
+input{
+ /* flex-grow: 1; */
+  padding: 5px 5px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+button{
+  padding: 10px 20px;
+border-radius: 9%;
+background-color: darkcyan;}
